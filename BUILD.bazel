@@ -1,0 +1,9 @@
+alias(
+    name = "envoy",
+    actual = "@envoy//source/exe:envoy",
+)
+
+alias(
+    name = "envoy.stripped",
+    actual = "@envoy//source/exe:envoy-static.stripped",
+)

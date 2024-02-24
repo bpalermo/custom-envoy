@@ -1,0 +1,16 @@
+# Generated file, do not edit. If you want to disable clang, just delete this file.
+build:clang --action_env='PATH=/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/bin:/home/palermo/.cargo/bin:/home/palermo/.dprint/bin:/home/palermo/.local/share/pnpm:/home/palermo/bin:/home/palermo/.jbang/bin:/home/palermo/.nvm/versions/node/v18.17.1/bin:/home/palermo/.tfenv/bin:/home/palermo/.istioctl/bin:/home/palermo/.cargo/bin:/home/palermo/.local/bin:/home/palermo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/opt/java/bin:/opt/maven/bin:/home/palermo/.local/share/JetBrains/Toolbox/scripts:/home/palermo/go/bin:/home/palermo/.local/bin:/home/palermo/bin' --host_action_env='PATH=/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/bin:/home/palermo/.cargo/bin:/home/palermo/.dprint/bin:/home/palermo/.local/share/pnpm:/home/palermo/bin:/home/palermo/.jbang/bin:/home/palermo/.nvm/versions/node/v18.17.1/bin:/home/palermo/.tfenv/bin:/home/palermo/.istioctl/bin:/home/palermo/.cargo/bin:/home/palermo/.local/bin:/home/palermo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/opt/java/bin:/opt/maven/bin:/home/palermo/.local/share/JetBrains/Toolbox/scripts:/home/palermo/go/bin:/home/palermo/.local/bin:/home/palermo/bin'
+build:clang --action_env=CC=clang --host_action_env=CC=clang
+build:clang --action_env=CXX=clang++ --host_action_env=CXX=clang++
+build:clang --action_env='LLVM_CONFIG=/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/bin/llvm-config' --host_action_env='LLVM_CONFIG=/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/bin/llvm-config'
+build:clang --repo_env='LLVM_CONFIG=/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/bin/llvm-config'
+build:clang --linkopt='-L/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/lib'
+build:clang --linkopt='-Wl,-rpath,/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/lib'
+
+build:clang-asan --action_env=ENVOY_UBSAN_VPTR=1
+build:clang-asan --copt=-fsanitize=vptr,function
+build:clang-asan --linkopt=-fsanitize=vptr,function
+build:clang-asan --linkopt='-L/opt/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04/lib/clang/17.0.6/lib/x86_64-unknown-linux-gnu'
+build:clang-asan --linkopt=-l:libclang_rt.ubsan_standalone.a
+build:clang-asan --linkopt=-l:libclang_rt.ubsan_standalone_cxx.a
+
